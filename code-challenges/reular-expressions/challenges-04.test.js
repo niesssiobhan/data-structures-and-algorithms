@@ -13,7 +13,9 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  // Solution code here...
+  // Solution code here... 
+  let regex = /\d/gm;
+  return regex.test(input); 
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -26,6 +28,8 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
+  let regex = /[A-Z]\w*/gm;
+  return str.match(regex);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -36,6 +40,8 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+  let regex = /[A-J]\w/gm;
+  return arr.match(regex);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -52,6 +58,8 @@ Do not use the vertical bar (pipe) in your pattern.
 
 const matchMonth = (input) => {
   // Solution code here...
+  let regex = /
+  return rgex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -66,6 +74,8 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 
 const noPunctuation = str => {
   // Solution code here...
+  let regex = /\s/[a-z]/b/gm;
+  return srt.array(regex);
 };
 
 /* ------------------------------------------------------------------------------------------------
