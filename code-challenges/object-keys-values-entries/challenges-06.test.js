@@ -13,8 +13,10 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 
 const getCourseKeys = (obj) => {
   // Solution code here...
+  return Object.keys(obj);
 }
 
+  
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 Use the characters data below for the remainder of the challenges.
@@ -69,6 +71,8 @@ let characters = [
 
 const totalCharacters = (arr) => {
   // Solution code here...
+  return arr.length;
+
 }
 
 /*------------------------------------------------------------------------------------------------
@@ -80,6 +84,9 @@ Write a function named getHouses that returns a new array containing the names o
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
+  arr.forEach((value, index) => {
+    houses.push(arr[index].house);
+  });
   return houses;
 }
 
@@ -97,6 +104,17 @@ hasChildrenValues(characters, 'Eddard') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
+  let child;
+  Object.values(arr).forEach(value => {
+    if (value.name === character) {
+      if (value.children.length === 0) { 
+        child = false;
+      } if (value.children.length > 0 ) {
+          child =  true;
+      }
+    }
+  });
+  return child;
 }
 
 /* ------------------------------------------------------------------------------------------------
