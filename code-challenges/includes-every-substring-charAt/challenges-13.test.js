@@ -12,7 +12,7 @@ const firstLetters = (arr) => {
   // Solution code here...
   let letters = []
   for(let i = 0; i < arr.length; i++){
-    letters.push(arr[i].chartAt(0));
+    letters.push(arr[i].charAt(0));
   }
   return letters;
 };
