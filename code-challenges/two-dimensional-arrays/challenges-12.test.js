@@ -68,10 +68,9 @@ const howManyTreats = (arr) => {
     if(name === 'Treats'){
       name.push(name.quanity);
       return quantity
-    }, [])
+    } []
     return errands
-  })
-};
+  }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
