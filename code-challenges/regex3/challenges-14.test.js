@@ -10,11 +10,11 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 
 const toTitleCase = (arr) => {
   // Solution code here...
-  let upperCase = [];
+  let firstUpperCase = [];
   for (let i = 0; i < arr.length; i++){
-    upperCase.push(arr[0].toUperCase().replace(/\b[a-z]/g));
+    upperCase.push(arr[i].toUpperCase().replace(/\b[a-z]/g));
   }
-  return upperCase;
+  return firstUpperCase;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -92,12 +92,13 @@ let biggerThanLuke = (arr) => {
   // Solution code here...
   let heavier = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].mass > 77);
+    parseInt(arr[i].mass, 10);
+    if (arr[i].mass > 77){
     heavier.push(arr[i].name);
+    }
   }
+  return heavier.join(' - ');
 }
-let string = heavier.join('-');
-return heavier;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -132,7 +133,7 @@ https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
 // Solution code here...
-let urlAddress = /^(http://|https://)w+.(.com$|.org$)/g;
+let urlAddress = /^(https:\/\/)\w+.(.com$|.org$)/g;
 return urlAddress.test(url);
 }
 
