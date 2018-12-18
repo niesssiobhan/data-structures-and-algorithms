@@ -8,4 +8,4 @@ This code challenge is that you are given an array and you need to write code so
 The approach that we took for this was to write everythign out on the writeboard. We wrote out the algorithm for the problem, the code that we planned on writing, the psedo code, went went through the verification, the problem domain, and then the visual to the problem. We wrote it all out on the whiteboard to get a good visual on what steps we needed to make and how to execute the problem. 
 
 ## Solution 
-![Whiteboard Image for Reverse an Array](./assets/array-reverse.jpg)
+![Whiteboard Image for Reverse an Array](../assets/array-reverse.jpg)
