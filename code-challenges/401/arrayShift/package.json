@@ -1,0 +1,19 @@
+{
+  "name": "arrayshift",
+  "version": "1.0.0",
+  "description": "Array Shift is to take a given array and shift integers over to left or right so you are able to input a new interger.",
+  "main": "array-shift.js",
+  "dependencies": {
+    "init": "^0.1.2",
+    "jest": "^23.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "author": "siobhan niess",
+  "license": "MIT",
+  "jest": "^23.6.0"
+}
