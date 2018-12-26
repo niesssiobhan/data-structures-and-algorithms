@@ -1,6 +1,6 @@
 'use strict';
 
-const secondCodeChallenge = require('../array-shift.js');
+const secondCodeChallenge = require('../array-shift.js');   
 
 describe ('running tests', () => {
   it('runs with an array with an odd length', () => {
@@ -26,4 +26,4 @@ describe ('running tests', () => {
     let result = secondCodeChallenge.insertShiftArray(arr, val);
     expect(result).toEqual(expected);
   });
-})
+});
