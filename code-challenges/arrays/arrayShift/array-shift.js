@@ -2,7 +2,7 @@
 
 let secondCodeChallenge = module.exports = {};
 
-secondCodeChallenge.insertShiftArray = (arr, val) => {
+secondCodeChallenge.insertShiftArray = function(arr, val) {
   let result = [];
   let mid = arr.length / 2;
 
