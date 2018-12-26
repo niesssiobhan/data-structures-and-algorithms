@@ -19,5 +19,3 @@ secondCodeChallenge.insertShiftArray = function(arr, val) {
   }
   return result;
 };
-
-module.exports = {insertShiftArray};
