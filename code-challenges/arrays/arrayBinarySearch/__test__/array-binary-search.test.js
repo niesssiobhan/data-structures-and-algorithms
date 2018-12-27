@@ -15,8 +15,8 @@ describe ('binary array search tests', () => {
 
   it('array of an even length', () => {
     let arr = [2, 4, 6, 8];
-    let val = 6;
-    let expected = 2;
+    let val = 2;
+    let expected = 0;
     let result = binary(arr, val);
     expect(result).toEqual(expected);
   });
