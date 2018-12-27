@@ -1,15 +1,17 @@
 'use strict';
 
-const BinarySearch = (arr, el) => {
-  let center = Math.ceil(arr.length / 2 -1);
-  if(arr[center] >= el){
-    for(let i = arr[center]; i > -1; i--){
+let binarySearchCodeChallenge = module.exports = {};
+
+binarySearchCodeChallenge.BinarySearch = (arr, el) => {
+  let center = Math.ceil(arr.length / 2) - 1;
+  if(arr[center] > el){
+    for(let i = center; i >= 0; i--){
       if(arr[i] === el){
         return arr[i];
       } else if(i === 0){
         return -1;
-      } else if(arr[center] <= el){
-        for(let i = arr[center]; i < arr.length -1; i--){
+      } else if(arr[center] < el){
+        for(let i = center; i < arr.length; i++){
           if(arr[i] === el){
             return arr[i];
           } else if(i === arr.length -1){
