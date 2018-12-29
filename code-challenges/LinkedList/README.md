@@ -26,3 +26,4 @@
 
 ## Solution
 ![Whiteboard Image for additional methods for linkedlist](./assets/linkedList.jpg)
+![Whiteboard Image for additional methods for linkedlist](./assets/linked-list3.JPG)
