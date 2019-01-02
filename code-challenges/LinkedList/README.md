@@ -16,7 +16,7 @@
 * Doing some research to figure what all I needed to do 
 * Referring back to other labs to help with writting tests
 * Created my Node constructor 
-* Created the Linked List insert, includes, and print method arguments 
+* Created the Linked List insert, includes, insertBefore, insertAfter, append, and print method arguments 
 * Went through testing for each 
 
 ## API
@@ -26,3 +26,5 @@
 
 ## Solution
 ![Whiteboard Image for additional methods for linkedlist](./assets/linkedList.jpg)
+![Whiteboard Image for additional methods for linkedlist](./assets/linkedListEndK.jpg)
+![Whiteboard Image for additional methods for linkedlist](./assets/linkedListMerged.jpg)
