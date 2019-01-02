@@ -26,9 +26,5 @@
 
 ## Solution
 ![Whiteboard Image for additional methods for linkedlist](./assets/linkedList.jpg)
-<<<<<<< HEAD
 ![Whiteboard Image for additional methods for linkedlist](./assets/linkedListEndK.jpg)
 ![Whiteboard Image for additional methods for linkedlist](./assets/linkedListMerged.jpg)
-=======
-![Whiteboard Image for additional methods for linkedlist](./assets/linked-list3.JPG)
->>>>>>> 054b508248aa627f9615d9c7419019a4003b4798
