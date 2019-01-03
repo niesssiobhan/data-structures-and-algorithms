@@ -2,84 +2,153 @@
 
 const list = require('./linked-list.js');
 
-describe('includes method', () => {
-  it('The return will be true if the value is found in list', () => {
-    let newList = new list.LinkedList();
-    newList.includes('Teagan snuggle muffin');
-    newList.includes('Jared aka Dada');
-    newList.includes('Keely noodle bear');
-    newList.includes('Buba Boone');
-    expect(newList.includes('Jared aka Dada')).toBeTruthy();
-  });
-
-  it('The return will be false if the value is found in list', () => {
-    let newList = new list.LinkedList();
-    newList.includes('Teagan snuggle muffin');
-    newList.includes('Jared aka Dada');
-    newList.includes('Keely noodle bear');
-    newList.includes('Buba Boone');
-    expect(newList.includes('Jared aka Mama')).toBeFalsy();
-  });
-
-  it('The return will be true if there are multiple correct values that are put into the method', () => {
-    let newList = new list.LinkedList();
-    newList.includes('Teagan snuggle muffin');
-    newList.includes('Jared aka Dada');
-    newList.includes('Keely noodle bear');
-    newList.includes('Buba Boone');
-    expect(newList.includes('Teagan snuggle muffin', 'Keely noodle bear')).toBeTruthy();
-  });
-
-  it('The return will be falsy if there are one or more correct values and incorrect values that are put into the method', () => {
-    let newList = new list.LinkedList();
-    newList.includes('Teagan snuggle muffin');
-    newList.includes('Jared aka Dada');
-    newList.includes('Keely noodle bear');
-    newList.includes('Buba Boone');
-    expect(newList.includes('Jared aka Mama', 'Buba Boone')).toBeFalsy();
-  });
-
-});
-
 describe('insert method', () => {
-  it('This will add a new Node to the list after a value is given', () => {
+  it('will add a new node to the start of the list if a value is given', () => {
     let newList = new list.LinkedList();
     newList.insert('Teagan snuggle muffin');
-    expect(newList.insert()).toEqual({'head': {'next': null, 'value': 'Teagan snuggle muffin'}});
+    expect(newList).toEqual({'head': {'next': null, 'value': 'Teagan snuggle muffin'}});
   });
 
-  it('This will add an empty Node to the list if there is no value that is given', () => {
+  it('will add a multiple nodes to the list if multiple nodes were given', () => {
+    let newList = new list.LinkedList();
+    newList.insert('Teagan snuggle muffin');
+    newList.insert('Keely noodle bear');
+    console.log(newList);
+    expect(newList.head.next.value).toEqual('Teagan snuggle muffin');
+  });
+
+  it('adds an empty node to the list if the value was not given', () => {
     let newList = new list.LinkedList();
     newList.insert();
-    expect(newList.insert()).toEqual({'head': {'next': null, 'value': undefined}});
+    expect(newList).toEqual({'head': {'next': null, 'value': undefined}});
   });
   
-  it('This will add multiple Nodes to the list if multiple Nodes are given', () => {
+});
+
+describe('includes method', () => {
+  it('will return true if the value was not found in the list', () => {
     let newList = new list.LinkedList();
-    newList.insert('Teagan snuggle muffin');
-    newList.insert('Buba Boone');
-    expect(newList.insert()).toEqual({'head': {'next': {'next': null, 'value': 'Buba Boone'}, 'value': 'Teagan snuggle muffin'}});
+    newList.append('Teagan snuggle muffin');
+    newList.append('Keely noodle bear');
+    newList.append('Bubba Boone');
+    newList.append('Jared aka Dada');
+    expect(newList.includes('Bubba Boone')).toBeTruthy();
   });
+
+  it('will return false if the value was not found in the list', () => {
+    let newList = new list.LinkedList();
+    newList.append('Teagan snuggle muffin');
+    newList.append('Keely noodle bear');
+    newList.append('Bubba Boone');
+    newList.append('Jared aka Dada');
+    expect(newList.includes('Jared aka Mama')).toBeFalsy();
+  });
+  
+  it('will return falsy if there are one or more correct or incorrect values are given', () => {
+    let newList = new list.LinkedList();
+    newList.append('Teagan snuggle muffin');
+    newList.append('Keely noodle bear');
+    newList.append('Bubba Boone');
+    newList.append('Jared aka Dada');
+    expect(newList.includes('Keely angry bear', 'Bubba Boone')).toBeFalsy();
+  });
+  
+  it('will return true if there are more than one correct values that are given', () => {
+    let newList = new list.LinkedList();
+    newList.append('Teagan snuggle muffin');
+    newList.append('Keely noodle bear');
+    newList.append('Bubba Boone');
+    newList.append('Jared aka Dada');
+    expect(newList.includes('Keely noodle bear', 'Bubba Boone')).toBeTruthy();
+  });
+
 });
 
 describe('print method', () => {
-  it('This is going to print all of the linked list', () => {
+  it('will print the entire linked list', () => {
     let newList = new list.LinkedList();
-    newList.print('Teagan snuggle muffin');
-    newList.print('Jared aka Dada');
-    newList.print('Keely noodle bear');
-    newList.print('Buba Boone');
-    expect(newList.print()).toEqual(['Teagan snuggle muffin', 'Jared aka Dada', 'Keely noodle bear', 'Buba Boone']);
+    newList.append('Teagan snuggle muffin');
+    newList.append('Keely noodle bear');
+    newList.append('Bubba Boone');
+    newList.append('Jared aka Dada');
+    expect(newList.print()).toEqual(['Teagan snuggle muffin', 'Keely noodle bear', 'Bubba Boone', 'Jared aka Dada']);
   });
 
-  it('This is going to return an empty list if there has been no values that have been entered', () => {
+  it('will return an empty list ifthere were no values added', () => {
     let newEmpty = new list.LinkedList();
     expect(newEmpty.print()).toEqual([]);
   });
 
-  it('This is going to return falsy if an array has been entered into the list', () => {
+  it('will return falsy if an array has been entered into the list', () => {
     let newList = new list.LinkedList();
-    let result = newList.insert([7, 17, 98, 19]);
+    let result = newList.append([1, 2, 3]);
     expect(result).toBeFalsy();
   });
+
+});
+
+describe('append method', () => {
+  it('will add a new node to the end of the list if a value has been given', () => {
+    let newList = new list.LinkedList();
+    newList.append('Teagan snuggle muffin');
+    expect(newList).toEqual({'head': {'next': null, 'value': 'Teagan snuggle muffin'}});
+  });
+
+  it('will add an empty node to the list if a value has not been given', () => {
+    let newList = new list.LinkedList();
+    newList.append();
+    expect(newList).toEqual({'head': {'next': null, 'value': undefined}});
+  });
+  
+  it('will add a multiple nodes to the list if multiple nodes have been given', () => {
+    let newList = new list.LinkedList();
+    newList.append('Teagan snuggle muffin');
+    newList.append('Keely noodle bear');
+    console.log(newList);
+    expect(newList.head.next.value).toEqual('Keely noodle bear');
+  });
+
+});
+
+describe('insert After method', () => {
+  it('will add a new value after the selected value if a new value has been given', () => {
+    let newList = new list.LinkedList();
+    newList.append('Bubba Boone');
+    newList.insertAfter('Bubba Boone', 'Teagan snuggle muffin');
+    expect(newList.head.next.value).toEqual('Teagan snuggle muffin');
+  });
+
+});
+
+describe('insert Before method', () => {
+  it('will add a new value before the selected value if a new value has been given', () => {
+    let newList = new list.LinkedList();
+    newList.append('Bubba Boone');
+    newList.insertBefore('Bubba Boone', 'Sir Charlie');
+    expect(newList.head.next.value).toEqual('Sir Charlie');
+  });
+
+});
+
+describe('kFromEnd method', () => {
+  it('will return the value of the node that has the value of k from the end', () => {
+    let newList = new list.LinkedList();
+    newList.append('Teagan snuggle muffin');
+    newList.append('Jared aka Dada');
+    newList.append('Keely noodle bear');
+    newList.append('Bubba Boone');
+    newList.append('Sir Charlie');
+    newList.kFromEnd(2);
+    expect(newList.kFromEnd(2)).toEqual('Keely noodle bear');
+  });
+
+  it('will return falsy if the k value is not an integer', () => {
+    let newList = new list.LinkedList();
+    newList.append('Teagan snuggle muffin');
+    newList.append('Jared aka Dada');
+    newList.append('Keely noodle bear');
+    let result = newList.kFromEnd('hi');
+    expect(result).toBeFalsy();
+  });
+
 });
