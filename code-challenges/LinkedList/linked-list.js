@@ -114,7 +114,10 @@ let list = new LinkedList();
 list.insert('Teagan snuggle muffin');
 list.insert('Jared aka Dada');
 list.insert('Keely noodle bear');
-list.append('Bubba Boone');
+list.append('Sir Charlie')
+list.insertAfter('Bubba Boone', 'Teagan snuggle muffin');
+list.insertBefore('Bubba Boone', 'Sir Charlie');
+list.kFromEnd('Keely noodle bear');
 
 list.print();
 
