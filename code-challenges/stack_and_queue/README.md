@@ -6,9 +6,8 @@
 ### Author: Siobhan Niess
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [server](http://xyz.com)
+* [repo](https://github.com/niesssiobhan/data-structures-and-algorithms/pull/40)
+* [travis](https://travis-ci.com/niesssiobhan/data-structures-and-algorithms)
 
 ### Modules
 #### `stacks-and-queues.js`
