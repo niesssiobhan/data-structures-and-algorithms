@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node fifo-animal-shelter.js",
+   "lint": "eslint **/*.js",
+   "test": "jest --verbose --coverage",
+   "test-watch": "jest --watchAll --verbose --coverage"
   },
   "author": "siobhan niess",
   "license": "MIT",

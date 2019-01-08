@@ -19,6 +19,12 @@ Create a Queue class that has a top property. It creates an empty queue when ins
 ##### Challenge 
 Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement the standard queue interface, but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods: enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
 dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+#### `fifo-animal-shelter.js`
+##### Challenge
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+Implement the following methods:
+enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 ##### Exported Values and Methods
 
 ### Setup
@@ -31,13 +37,15 @@ dequeue() which extracts a value from the PseudoQueue, using a first-in, first-o
 
 #### Tests
 * How do you run tests?
-npm <filename> test
+npm test
 * What assertions were made?
 * What assertions need to be / should be made?
 
 #### Collaborators
 * Becca
 * Jacob
+* George
 
 #### Solution
 ![Whiteboard Image for additional methods for linkedlist](./assets/queues_with_stacks.jpg)
+![Whiteboard Image for additional methods for linkedlist](./assets/fifo-animal-shelter.jpg)
