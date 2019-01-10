@@ -15,6 +15,6 @@ describe('AnimalShelter', () => {
       expect(queue instanceof AnimalShelter).toBeThruthy();
     });
 
-    
-
   });
+});
+
