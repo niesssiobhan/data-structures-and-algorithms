@@ -1,20 +1,20 @@
 'use strict';
 
-let sq = require('../stacks-and-queues.js');
 
-let stackOne = new sq.Stack();
-stackOne.push(10);
-stackOne.push(15);
-stackOne.push(20);
+const Stack = require('../stacks-and-queues.js');
 
-let stackTwo = new sq.Stack();
-
-class PsuedoQueue { //not sure where the right pace is to declare the class
-
+class PsuedoQueue { 
+  
+  constructor() {
+    this.stackOne = new Stack();
+    this.stackTwo = new Stack();
+  }
+      
   enqueue(value){
     while(stackOne.peek().value !== null){
       let popNum = stackOne.pop();
       stackTwo.push(popNum);
+
     }
     stackOne.push(value);
     while(stackTwo.peek().value !== null){
@@ -29,5 +29,4 @@ class PsuedoQueue { //not sure where the right pace is to declare the class
   }
 }
 
-let test = new PseudoQueue();
-test.enqueue(5);
+module.exports = PsuedoQueue;
