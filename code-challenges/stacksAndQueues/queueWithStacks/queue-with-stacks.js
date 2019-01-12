@@ -1,26 +1,31 @@
 'use strict';
 
+
 const Stack = require('../stacks-and-queues.js');
 
-class PsuedoQueue {
+class PsuedoQueue { 
+  
   constructor() {
-    this.s1 = new Stack();
-    this.s2 = new Stack();
+    this.stackOne = new Stack();
+    this.stackTwo = new Stack();
   }
-  enqueue(value) {
-    while(this.s1.peek.value){
-      let popNum = this.s1.pop();
-      this.s2.push(popNum);
+      
+  enqueue(value){
+    while(stackOne.peek().value !== null){
+      let popNum = stackOne.pop();
+      stackTwo.push(popNum);
+
     }
-    this.s1.push(value);
-    while(this.s2.peek.value) {
-      let popNum = this.s2.pop();
-      this.s1.push(popNum);
+    stackOne.push(value);
+    while(stackTwo.peek().value !== null){
+      let popNum = stackTwo.pop();
+      stackOne.push(popNum);
     }
-    return this.s1;
+    return stackOne;
   }
+
   dequeue(){
-    return this.s1.pop();
+    return stackOne.pop();
   }
 }
 

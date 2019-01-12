@@ -1,13 +1,10 @@
 {
-  "name": "stack_and_queue",
+  "name": "tree",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node fifo-animal-shelter.js",
-   "lint": "eslint **/*.js",
-   "test": "jest --verbose --coverage",
-   "test-watch": "jest --watchAll --verbose --coverage"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "siobhan niess",
   "license": "MIT",
