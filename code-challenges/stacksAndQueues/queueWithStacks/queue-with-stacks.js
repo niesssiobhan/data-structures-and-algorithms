@@ -1,8 +1,9 @@
 'use strict';
 
+const Stack = require('../stacks-and-queues.js');
+
 class PsuedoQueue {
   constructor() {
-    const Stack = require('stacks-and-queues.js');
     this.s1 = new Stack();
     this.s2 = new Stack();
   }
@@ -22,3 +23,5 @@ class PsuedoQueue {
     return this.s1.pop();
   }
 }
+
+module.exports = PsuedoQueue;
