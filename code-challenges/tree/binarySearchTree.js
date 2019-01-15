@@ -66,4 +66,25 @@ contain(value) {
 }
 }
 
+breadthFirstTree() {
+  if (this.root === null) {
+    return;
+  }
+  let queue = [];
+  queue.push(this.root);
+  
+  while (queue.length > 0) {
+    var current = queue[0];
+    console.log(current.value);
+    
+    if (current.left !== null) {
+      queue.push(current.left)
+    }
+    if (current.right !== null) {
+      queue.push(current.right)
+    }
+    queue.shift()
+  }
+}
+
 module.exports = BinarySearchTree;

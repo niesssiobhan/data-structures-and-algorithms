@@ -17,6 +17,7 @@
 * Create a BinarySearchTree class
   * Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
   * Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+* Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
 #### `fizz-buzz-tree.js`
 ##### Challenge
 * Write a function called FizzBuzzTree which takes a tree as an argument.
@@ -42,6 +43,7 @@ npm test
 
 #### Collaborators
 * Brent
+* Tanner
 
 ### To-do list
 - [x] Read all of these instructions carefully
@@ -59,3 +61,4 @@ npm test
 
 #### Solution
 ![Whiteboard Image for additional methods for linkedlist](./assets/fizzBuzz.jpg)
+![Whiteboard Image for additional methods for linkedlist](./assets/breadthTree.jpg)
