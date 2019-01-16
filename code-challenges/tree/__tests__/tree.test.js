@@ -1,6 +1,6 @@
 'use strict';
 
-const tree =  require('..//tree/tree.js')
+const tree =  require('../tree/tree.js');
 
 describe('tree', () => {
   describe('preOrder', () => {

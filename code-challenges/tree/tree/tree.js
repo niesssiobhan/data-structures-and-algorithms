@@ -61,4 +61,30 @@ b.left = d;
 b.right = e;
 tree.root = a;
 
+const Queue = require('../../../stacks-and-queues.js');
+
+function findMaxValue(tree) {
+  let big;
+  let q = new Queue.Queue();
+
+  let _walk = (node) => {
+    if(node.left) {
+      if(node.left.value > big) {
+        big = node.left.value;
+      }
+      q.enueue(node.left);
+    }
+    if(node.right) {
+      if(node.right.value > big) {
+        big = node.right.value;
+      }
+      q.enueue(node.right);
+    }
+  }
+  _walk(tree.root);
+  return big;
+}
+
+findMaxValue();
+
 module.exports = BinaryTree;

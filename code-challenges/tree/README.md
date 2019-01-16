@@ -12,6 +12,7 @@
 * Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
 * Create a BinaryTree class
   * Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately.
+* Write a function called find-maximum-value which takes binary tree as its only input. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
 #### `binarySearchTree.js`
 ##### Challenge 
 * Create a BinarySearchTree class
@@ -44,6 +45,7 @@ npm test
 #### Collaborators
 * Brent
 * Tanner
+* Caity
 
 ### To-do list
 - [x] Read all of these instructions carefully
@@ -62,3 +64,4 @@ npm test
 #### Solution
 ![Whiteboard Image for additional methods for linkedlist](./assets/fizzBuzz.jpg)
 ![Whiteboard Image for additional methods for linkedlist](./assets/breadthTree.jpg)
+![Whiteboard Image for additional methods for linkedlist](./assets/findMaximunValue.jpg)
