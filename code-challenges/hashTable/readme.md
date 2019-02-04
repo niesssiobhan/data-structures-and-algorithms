@@ -14,14 +14,21 @@
 * A method/function named contains that takes in the key and returns if the key exists in the table already.
 * A method/function named GetHash that takes in a key and returns the index in the array the key is stored.
 
-##### Exported Values and Methods
+## Approach & Efficiency
+* The Big O for this would be 0(1) since iit will going through a linked list, looping through an array once.
+* My approach was to require in the linked list for my hashtable
 
-### Setup
-#### `.env` requirements
-* `PORT` - Defined by ENV
-
-#### Running the app
-* '/'
+## API
+* `hash(key)` 
+  * the key is hashed before it is added to the table
+* `add(key, value)` 
+  * the key is hashed and then the key value pair is added to the hashtable
+* `find(key)`
+  *  find takes in a key and then the value from the key value pair is the return 
+* `contains(key)`
+  * a true or false is retruned is a key can be found or not
+* `getHash(key)`
+  * the index where the key has been hashed from is what is returned 
 
 #### Tests
 * How do you run tests?
