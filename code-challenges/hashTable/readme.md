@@ -13,6 +13,10 @@
 * A method/function named Find that takes in the key and returns the value from key/value pair.
 * A method/function named contains that takes in the key and returns if the key exists in the table already.
 * A method/function named GetHash that takes in a key and returns the index in the array the key is stored.
+#### `reapeated-word.js`
+##### Challenge 
+* Write a function that accepts a lengthy string parameter.
+* Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
 
 ## Approach & Efficiency
 * The Big O for this would be 0(1) since iit will going through a linked list, looping through an array once.
