@@ -3,15 +3,14 @@
 const Hashtable = require('../hashtable.js');
 
 function repeatedWord(str) {
-  let strArr = str.toLowerCase().split(' ');
+  let strArray = str.toLowerCase().split(' ');
   let hashtable = new Hashtable(1024);
-
-  for(let i = 0; i < strArr.length; i++) {
+  for(let i = 0; i < strArray.length; i++) {
     console.log(arr[i])
-    if (hashtable.contains(strArr[i].trim())) {
-      return strArr[i];
+    if (hashtable.contains(strArray[i].trim())) {
+      return strArray[i];
     }
-    hashtable.add(strArr[i], strArr[i]);
+    hashtable.add(strArray[i], strArray[i]);
   }
   return null;
 }

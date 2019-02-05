@@ -22,6 +22,9 @@
 * The Big O for this would be 0(1) since iit will going through a linked list, looping through an array once.
 * My approach was to require in the linked list for my hashtable
 
+* The Big O for this owould be 0(n) since it would have to loop through the lengthof the arry and it could be any length.
+* My approach to this was to require in my hashtable and methods and to split it to only contain the first most common word and return it. 
+
 ## API
 * `hash(key)` 
   * the key is hashed before it is added to the table
@@ -58,4 +61,4 @@ npm test
 - [ ] Merge your branch into master (soon)
 
 #### Solution
-![Whiteboard Image for additional methods for hashtables]()
+![Whiteboard Image for additional methods for hashtables](./assets/repeatedWord.jpg)
