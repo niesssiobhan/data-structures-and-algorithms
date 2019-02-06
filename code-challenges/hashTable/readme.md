@@ -21,6 +21,14 @@
 ##### Challenge
 * Write a function called tree_intersection that takes two binary tree parameters.
 * Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
+#### `left-join.js`
+##### Challenge
+* Write a function that LEFT JOINs two hashmaps into a single data structure.
+* The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+* The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+* Combine the key and corresponding values (if they exist) into a new data structure according to LEFT JOIN logic.
+* LEFT JOIN means all the values in the first hashmap are returned, and if values exist in the “right” hashmap, they are appended to the result row. If no values exist in the right hashmap, then some flavor of NULL should be appended to the result row.
+* The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic.
 
 ## Approach & Efficiency
 ### Hashtable
@@ -34,6 +42,10 @@
 ### tree-intersection
 * The Big O for this would be O(n) and O(h) since you wouldnt know how deep and wide the trees would be
 * My approach for this was to walk trhough each tree down the right side and then down the left side. Them t do the same for the second tree and put all of the common values founf into an empty array. 
+
+### leftJoin
+* The Big O for this would be O(n) for the time because you won't know how may keys are going to be in the hash Table. The Big 0 for the space would be O(n+m) because woudl be combining the value of both hashTables.
+* My approach to this was to collect all oft he keys flrom the let hashtable and the contain all of the values from both hashtables what share common keys. 
 
 ## API
 * `hash(key)` 
@@ -54,7 +66,7 @@ npm test
 * What assertions need to be / should be made?
 
 #### Collaborators
-
+* Fletcher
 
 ### To-do list
 - [x] Read all of these instructions carefully
@@ -73,3 +85,4 @@ npm test
 #### Solution
 ![Whiteboard Image for additional methods for hashtables](./assets/repeatedWord.jpg)
 ![Whiteboard Image for additional methods for hashtables](./assets/tree-intersection.jpg)
+![Whiteboard Image for additional methods for hashtables](./assets/leftJoin.jpg)
