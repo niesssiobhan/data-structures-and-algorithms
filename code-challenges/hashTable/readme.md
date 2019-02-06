@@ -17,13 +17,23 @@
 ##### Challenge 
 * Write a function that accepts a lengthy string parameter.
 * Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+#### `tree-intersection.js`
+##### Challenge
+* Write a function called tree_intersection that takes two binary tree parameters.
+* Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
 
 ## Approach & Efficiency
-* The Big O for this would be 0(1) since iit will going through a linked list, looping through an array once.
+### Hashtable
+* The Big O for this would be O(1) since iit will going through a linked list, looping through an array once.
 * My approach was to require in the linked list for my hashtable
 
-* The Big O for this owould be 0(n) since it would have to loop through the lengthof the arry and it could be any length.
+### reapatedWord
+* The Big O for this would be O(n) since it would have to loop through the lengthof the arry and it could be any length.
 * My approach to this was to require in my hashtable and methods and to split it to only contain the first most common word and return it. 
+
+### tree-intersection
+* The Big O for this would be O(n) and O(h) since you wouldnt know how deep and wide the trees would be
+* My approach for this was to walk trhough each tree down the right side and then down the left side. Them t do the same for the second tree and put all of the common values founf into an empty array. 
 
 ## API
 * `hash(key)` 
@@ -62,3 +72,4 @@ npm test
 
 #### Solution
 ![Whiteboard Image for additional methods for hashtables](./assets/repeatedWord.jpg)
+![Whiteboard Image for additional methods for hashtables](./assets/tree-intersection.jpg)
