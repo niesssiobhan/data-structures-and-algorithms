@@ -3,8 +3,8 @@
 ### Author: Siobhan Niess
 
 ### Links and Resources
-* [repo]()
-* [travis]()
+* [repo](https://github.com/niesssiobhan/data-structures-and-algorithms/tree/master/code-challenges/graph)
+* [travis](https://www.travis-ci.com/niesssiobhan/data-structures-and-algorithms)
 
 ### Modules
 #### `graph.js`
@@ -29,10 +29,15 @@ Returns the total number of nodes in the graph
 
 ## Approach & Efficiency
 ### Graphs
-* 
+* I was able to follow along with the methods taught in class 
+* For each of the methods I would believe that the Big O would be O(1)
 
 ## API
-* 
+* AddNode() this will add a node to the graph and then return the value 
+* AddEdge() this will add on an edge between the nodes (this can include weight)
+* GetNodes() this wil return all nodes as a collection
+* GetNeighbors() this will return a list of all nodes connected to the node that was given
+* GetSize() this will return the number of nodes that are in the graph
 
 #### Tests
 * How do you run tests?
@@ -57,4 +62,4 @@ npm test
 - [ ] Merge your branch into master (soon)
 
 #### Solution
-![Whiteboard Image for additional methods for graphs](./assets/graphs.jpg)
+![Whiteboard Image for ](./assets/.jpg)
