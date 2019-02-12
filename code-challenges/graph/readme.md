@@ -26,11 +26,17 @@ Takes in a given node
 Include the weight of the connection in the returned collection
 * Size()
 Returns the total number of nodes in the graph
+#### `breadth-first.js`
+##### Challenge
+* Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited. Display the collection.
 
 ## Approach & Efficiency
 ### Graphs
 * I was able to follow along with the methods taught in class 
 * For each of the methods I would believe that the Big O would be O(1)
+### Breadth First
+* My approach to this was reviewing back on the breadth-first on the trees method
+* I would have to say that the Big O for this would be O(w)
 
 ## API
 * AddNode() this will add a node to the graph and then return the value 
@@ -46,6 +52,7 @@ npm test
 * What assertions need to be / should be made?
 
 #### Collaborators
+* Jon
 
 ### To-do list
 - [x] Read all of these instructions carefully
@@ -62,4 +69,4 @@ npm test
 - [ ] Merge your branch into master (soon)
 
 #### Solution
-![Whiteboard Image for ](./assets/.jpg)
+![Whiteboard Image for ](./assets/breadth-first.jpg)
