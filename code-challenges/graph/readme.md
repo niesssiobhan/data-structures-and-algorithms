@@ -29,6 +29,9 @@ Returns the total number of nodes in the graph
 #### `breadth-first.js`
 ##### Challenge
 * Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited. Display the collection.
+#### `get-edge.js`
+##### Challenge 
+* Write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
 
 ## Approach & Efficiency
 ### Graphs
@@ -37,6 +40,9 @@ Returns the total number of nodes in the graph
 ### Breadth First
 * My approach to this was reviewing back on the breadth-first on the trees method
 * I would have to say that the Big O for this would be O(w)
+### Get Edge
+* My approach to this was doing some research online and going over lecture notes 
+* I would have to say that the Big O for this would be O(1) for both time and space
 
 ## API
 * AddNode() this will add a node to the graph and then return the value 
@@ -70,3 +76,4 @@ npm test
 
 #### Solution
 ![Whiteboard Image for ](./assets/breadth-first.jpg)
+![Whiteboard Image for ](./assets/get-edge.jpg)
