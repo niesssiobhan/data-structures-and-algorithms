@@ -32,6 +32,9 @@ Returns the total number of nodes in the graph
 #### `get-edge.js`
 ##### Challenge 
 * Write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
+#### `depth-first.js`
+##### Challenge
+* Create a function that accepts an adjacency list as a graph, and conducts a depth first traversal. Without utilizing any of the built-in methods available to your language, return a collection of nodes in their pre-order depth-first traversal order.
 
 ## Approach & Efficiency
 ### Graphs
@@ -43,6 +46,9 @@ Returns the total number of nodes in the graph
 ### Get Edge
 * My approach to this was doing some research online and going over lecture notes 
 * I would have to say that the Big O for this would be O(1) for both time and space
+### Depth First
+* My approach to this was starting at the root and then moving down to the next neighbor until each vertex has been visited
+* I would have to say that the Big O for this would be O(|v|) for time and O(|v|) for space
 
 ## API
 * AddNode() this will add a node to the graph and then return the value 
@@ -75,5 +81,6 @@ npm test
 - [ ] Merge your branch into master (soon)
 
 #### Solution
-![Whiteboard Image for ](./assets/breadth-first.jpg)
-![Whiteboard Image for ](./assets/get-edge.jpg)
+![Whiteboard Image for graphs](./assets/breadth-first.jpg)
+![Whiteboard Image for graphs](./assets/get-edge.jpg)
+![Whiteboard Image for graphs](./assets/depthFirst.jpg)
