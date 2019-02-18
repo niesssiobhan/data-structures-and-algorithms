@@ -3,8 +3,8 @@
 ### Author: Siobhan Niess
 
 ### Links and Resources
-* [repo]()
-* [travis]()
+* [repo](https://github.com/niesssiobhan/data-structures-and-algorithms/pull/64)
+* [travis](https://www.travis-ci.com/niesssiobhan/data-structures-and-algorithms)
 
 ### Modules
 #### `merge-sort.js`
