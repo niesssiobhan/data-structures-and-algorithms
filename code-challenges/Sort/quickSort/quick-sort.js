@@ -1,3 +1,5 @@
+'use strict';
+
 function quickSort(arr) {
   let low = 0;
   let high = arr.length - 1;

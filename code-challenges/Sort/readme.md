@@ -13,6 +13,9 @@
 #### `quick-sort.js`
 ##### Challenge
 * Write a function that accepts an array of integers, and returns an array sorted by a recursive quicksort algorithm.
+#### `radix-sort.js`
+##### Challenge
+* Write a function that accepts an array of positive integers, and returns an array sorted by a radix sort algorithm.
 
 ## Approach & Efficiency
 * mergeSort
@@ -21,6 +24,9 @@
 * quickSort
   * My approach to this was collaboration and researc, and reviewing back to yesterdays challenge
   * The Big O for this was O(n * logn)
+* radixSort
+  * My approach to this was collaboration, using buckets, and research
+  * The Big O for time is O(b * (n+b)) and the Big O for space is O(n+b)
 
 #### Tests
 * How do you run tests?
@@ -32,6 +38,8 @@ npm test
 * Brent
 * Becca
 * Michael
+* Jared
+* Hannah
 
 ### To-do list
 - [x] Read all of these instructions carefully
@@ -50,3 +58,4 @@ npm test
 #### Solution
 ![Whiteboard Image for sorting](./assets/mergeSort.jpg)
 ![Whiteboard Image for sorting](./assets/quickSort.jpg)
+![Whiteboard Image for sorting](./assets/radixSort.jpg)
